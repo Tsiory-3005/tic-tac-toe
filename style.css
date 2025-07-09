@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #a78bfa, #3b82f6);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#global-footer {
+    background: none;
+    color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+#global-footer img{
+    border-radius: 50%;
+}
+
+#end-screen {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #a78bfa, #3b82f6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+#end-screen button {
+    background-color: #1f2937;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#end-screen button:hover {
+    background-color: #374151;
+}
+
+
+/* Accueil */
+#welcome-screen {
+    height: 100vh;
+    background: linear-gradient(to bottom, #a78bfa, #3b82f6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-screen h1 {
+    font-size: 5rem;
+    margin: 0.5rem;
+}
+
+#welcome-screen button {
+    padding: 15px 40px;
+    margin-top: 2rem;
+    background-color: #c084fc;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s;
+}
+
+#welcome-screen button:hover {
+    background-color: #a855f7;
+}
+
+#welcome-screen footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #e0e7ff;
+}
+
+#welcome-screen footer img {
+    margin-bottom: 0.5rem;
+}
+
+/* Mode screen */
+#mode-screen {
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#mode-screen h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.mode-buttons {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mode-buttons button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #c084fc;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s;
+}
+
+.mode-buttons button:hover {
+    background-color: #a855f7;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;        
+    margin-bottom: 1rem;     
+    font-size: 2rem; 
+}
+
+#game-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; 
+    padding: 2rem 1rem;
+}
+
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 1rem;
+}
+
+.cell {
+    background-color: white;
+    border: 1px solid #3b82f6;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 10px;
+}
+
+.cell:hover {
+    background-color: #eee;
+}
+
+.info {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 600px) {
+    #board {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+    }
+
+    .cell {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .info {
+        font-size: 1rem;
+    }
+}
