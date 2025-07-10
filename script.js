@@ -23,7 +23,6 @@ const winConditions = [
     [0,4,8], [2,4,6]
 ];
 
-// Navigation entre écrans
 document.getElementById("start-btn").addEventListener("click", () => {
     welcomeScreen.style.display = "none";
     modeScreen.style.display = "flex";
@@ -43,7 +42,6 @@ document.getElementById("mode-bot").addEventListener("click", () => {
     startGame();
 });
 
-// Initialisation
 function startGame() {
     board = ["", "", "", "", "", "", "", "", ""];
     currentPlayer = "X";

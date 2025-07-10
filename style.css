@@ -58,8 +58,6 @@ body {
     background-color: #374151;
 }
 
-
-/* Accueil */
 #welcome-screen {
     height: 100vh;
     background: linear-gradient(to bottom, #a78bfa, #3b82f6);
@@ -102,7 +100,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* Mode screen */
 #mode-screen {
     height: 100vh;
     color: white;
@@ -129,7 +126,7 @@ body {
     padding: 15px 30px;
     font-size: 1.2rem;
     font-weight: bold;
-    background-color: #c084fc;
+    background-color: #a855f7;
     border: none;
     border-radius: 12px;
     cursor: pointer;
@@ -138,7 +135,7 @@ body {
 }
 
 .mode-buttons button:hover {
-    background-color: #a855f7;
+    background-color: #c084fc;
 }
 
 h1 {
